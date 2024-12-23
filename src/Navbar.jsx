@@ -66,13 +66,13 @@ function Navbar() {
   };
 
   return (
-    <header className='fixed -top-0 w-full'>
+    <header className='fixed top-0 w-full'>
       <nav className='w-full bg-gradient-to-r from-slate-600 to-slate-800 grid grid-cols-7 items-center py-2'>
         <div className='cols-span-1 hidden md:block'>
           {" "}
           <img src={logo} alt='' className='w-16 mx-auto' />
         </div>
-        <div className='flex items-center gap-2 col-span-7 md:col-span-6 justify-center'>
+        <div className='flex items-center sm:gap-2 col-span-7 md:col-span-6 justify-center'>
           <div className='w-fit relative'>
             <input
               type='text'

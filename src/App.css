@@ -8,3 +8,18 @@
   max-height: 550px;
   max-width: 59%;
 }
+@media screen and (max-width: 770px) {
+  .dbox {
+    max-width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .dbox{
+    max-width: 85%;
+    height: 100%;
+    overflow: scroll;
+  }
+}

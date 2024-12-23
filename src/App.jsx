@@ -96,7 +96,7 @@ function App() {
             <h2 className='text-sky-200 text-2xl font-bold text-center'>
               Favourite Recipes
             </h2>
-            <div className='flex flex-wrap items-center justify-start px-16 py-6 gap-10'>
+            <div className='flex flex-wrap items-center justify-center md:justify-start px-16 py-6 gap-10'>
               {savedRecipe.map((ele, idx) => (
                 <div
                   key={ele.id}

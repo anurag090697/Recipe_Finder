@@ -51,8 +51,8 @@ function DialogBox({ selectedDish }) {
   return (
     <div className='w-full h-full bg-black/60 z-40 fixed top-0 flex items-center justify-center'>
       <div className='bg-slate-400 rounded-md dbox'>
-        <div className='w-full flex items-center justify-between bg-gray-200'>
-          <h4 className='text-xl font-medium px-2 text-blue-500'>
+        <div className='w-full flex items-start justify-between bg-gray-200'>
+          <h4 className='md:text-xl font-medium px-2 text-blue-500'>
             {selectedDish.title}
           </h4>
           <button
@@ -62,10 +62,10 @@ function DialogBox({ selectedDish }) {
             X
           </button>
         </div>
-        <div className='grid grid-cols-3'>
+        <div className='grid grid-cols-1 md:grid-cols-3'>
           {" "}
-          <img src={selectedDish.image} className='col-span-1' alt='' />
-          <div className='col-span-2 flex gap-2 items-start justify-center flex-wrap p-2'>
+          <img src={selectedDish.image} className='md:col-span-1' alt='' />
+          <div className='md:col-span-2 flex gap-2 items-start md:justify-center flex-wrap p-2'>
             {selectedDish.dishTypes.map((ele, idx) => (
               <h3
                 key={idx}
@@ -87,7 +87,7 @@ function DialogBox({ selectedDish }) {
             <h3 className='bg-sky-600 rounded-md border p-1 uppercase font-mono text-gray-200'>
               {selectedDish.readyInMinutes}-Minutes
             </h3>
-            <div className='self-end w-full flex justify-end'>
+            <div className='self-end w-full flex md:justify-end'>
               {" "}
               {hasdish() ? (
                 <button
@@ -106,7 +106,7 @@ function DialogBox({ selectedDish }) {
               )}
             </div>
           </div>
-          <div className='text-lg font-medium border col-span-3 p-1'>
+          <div className='text-lg font-medium border md:col-span-3 p-1'>
             Prepared and uploaded By-{" "}
             <span className='underline text-blue-700'>
               {selectedDish.creditsText || selectedDish.sourceName}{" "}
