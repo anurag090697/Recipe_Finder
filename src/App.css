@@ -1,0 +1,10 @@
+/** @format */
+
+.hero {
+  background-image: url("../public/herologo.jpg");
+  background-position: bottom;
+}
+.dbox {
+  max-height: 550px;
+  max-width: 59%;
+}
